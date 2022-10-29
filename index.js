@@ -84,15 +84,37 @@
 
 //Make the 2nd item have green background color
 
-var item=document.querySelector('.list-group-item:nth-child(2)');
-item.style.background="green";
+//var item=document.querySelector('.list-group-item:nth-child(2)');
+// item.style.background="green";
 
-//Make the 3rd item invisible
-var invisible=document.querySelector('.list-group-item:nth-child(3)');
-invisible.style.visibility = "hidden";
+// //Make the 3rd item invisible
+// var invisible=document.querySelector('.list-group-item:nth-child(3)');
+// invisible.style.visibility = "hidden";
 
 
 ///////
 //QuerySelectorALL
+
+//Using QuerySelectorALL change the font color to green for 2nd item in the item list
+
+var fontcolo=document.querySelectorAll('.list-group-item:nth-child(1)');
+//fontcolo.text.fontcolor="green";
+
+//Choose all the odd elements and make their background green using QuerySelectorALL﻿
+
+var odd=document.querySelectorAll('li:nth-child(odd)');
+
+for(let i=0;i<odd.length;i++)
+{
+    odd[i].style.background="green";
+}
+
+//What is the difference between queryselector and queryselectorall?
+// querySelector() methodcan only be used to access a single element
+//  while querySelectorAll() method can be used to access all elements 
+//  which match with a specified CSS selector. To return all matches, 
+//  querySelectorAll has to be used, while to return a single match,
+//   querySelector is used.
+
 
 
