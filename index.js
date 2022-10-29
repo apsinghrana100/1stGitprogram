@@ -19,3 +19,5 @@ console.log(Main_item);
 const main_item=document.getElementById('main');
 main_item.firstElementChild.innerHTML='<b>ADD ITEM</b>';
 main_item.firstElementChild.style.color="green";
+
+console.log("only for testing");
