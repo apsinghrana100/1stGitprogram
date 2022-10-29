@@ -47,36 +47,52 @@
 // }
 
 
+
+
 ///And try editing it with getelementsbyclassname and then by getelementbytagname
-const items=document.getElementsByClassName('list-group-item');
-//items[5].style.fontWeight="bold";
+// const items=document.getElementsByClassName('list-group-item');
+// //items[5].style.fontWeight="bold";
 
 
 
-// //getelementbyclassid
+// // //getelementbyclassid
 
- li=document.getElementsByTagName('li');
-console.log(li);
-console.log(li[1]);
-li[1].textContent='hello-2';
-li[1].style.fontWeight='Bold';
-li[1].style.backgroundColor='yellow';
+//  li=document.getElementsByTagName('li');
+// console.log(li);
+// console.log(li[1]);
+// li[1].textContent='hello-2';
+// li[1].style.fontWeight='Bold';
+// li[1].style.backgroundColor='yellow';
 
-for(let i=0;i<items.length;i++)
-{
-    li[i].style.backgroundColor="gray";
-}
+// for(let i=0;i<items.length;i++)
+// {
+//     li[i].style.backgroundColor="gray";
+// }
 
-//Make the 3 rd element in the list have green background color
+// //Make the 3 rd element in the list have green background color
 
-li[2].style.backgroundColor="green";
+// //li[2].style.backgroundColor="green";
 
-//Make all the elements in the list have bold color font
+// //Make all the elements in the list have bold color font
 
-for(let i=0;i<items.length;i++)
-{
-    items[i].style.fontWeight="bold";
-}
-li[4].style.backgroundColor="Blue";
+// for(let i=0;i<items.length;i++)
+// {
+//     items[i].style.fontWeight="bold";
+// }
+// li[4].style.backgroundColor="Blue";
+
+
+//Make the 2nd item have green background color
+
+var item=document.querySelector('.list-group-item:nth-child(2)');
+item.style.background="green";
+
+//Make the 3rd item invisible
+var invisible=document.querySelector('.list-group-item:nth-child(3)');
+invisible.style.visibility = "hidden";
+
+
+///////
+//QuerySelectorALL
 
 
