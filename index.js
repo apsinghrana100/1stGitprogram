@@ -155,7 +155,7 @@ newdiv.appendChild(newtextnode);
 var continer=document.querySelector('header .container');
 var h1=document.querySelector('header h1');
 continer.insertBefore(newdiv,h1);
-
+    
 
 // Now go head and add HEllo word before Item 1
 var itemsbefore=document.getElementById('items');
